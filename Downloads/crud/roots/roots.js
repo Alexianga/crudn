@@ -1,12 +1,14 @@
-import {Roots} from 'express' 595K (gzipped :243.9K)
+import {Routes} from 'express'import { route } from 'express/lib/application'
+import { route } from 'express/lib/router'
 
-const Root = root()
 
-root.get ('/getAll', '')
-root.get('getOne/id', "")
-root.get('createOne', "")
-root.put('updateOne/:id', "")
-root.delete('deleteOne/:id')
+const route = route()
+
+route.get ('/getAll', '')
+route.get('getOne/id', "")
+route.get('createOne', "")
+route.put('updateOne/:id', "")
+route.delete('deleteOne/:id')
 
 
 export default Root
